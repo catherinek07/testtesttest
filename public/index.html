@@ -1,43 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    
+    <title>Catherine Kim Portfolio</title>
+</head>
+<body>
+  <a href="#" class="scroll">Scroll To Top!</a>
+  <div>
+      <nav>
+          <img src="./images/icon.webp"> 
+          <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#awards">Awards</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+          </ul>
+      </nav>
+      <article id="about">
+          <h1>
+              Catherine Kim
+          </h1>
+          <h2>Waterloo, ON</h2>
+          <a href = "mailto: inkyeongckim@gmail.com">inkyeongckim@gmail.com</a>
+          <p>
+              A first-year Software Engineering student at the University of Waterloo. 
+          </p>
+          <p>Find my resume below!</p>
+          <a href = "https://docs.google.com/document/d/1bRMeLZUF2rC8VNRTf6UJCMmZXape2uwEQlZ8am0cZ8g/edit?usp=sharing">My Resume</a>
+      </article>
+      <article id="projects">
+          <h1>Projects</h1>
+          <h2>Computing Projects by Catherine Kim</h2>
+          <a href="https://github.com/catherinek07">Catherine's Github</a>
+          <p></p>
+          <div class="images">
+              <img src="./images/fridge.png" alt="Fridge Tracker" >
+              <p></p>
+              <a href="https://github.com/catherinek07/FridgeTracker">Take me there!</a>
+          </div>
+          <div class="images">
+              <img src="./images/cia.png" alt="CIA Fact Finder">
+              <p></p>
+              <a href="https://github.com/catherinek07/CIA-Fact-Finder">Take me there!</a>
+          </div>
+          <div class="images">
+              <img src="./images/nwitter.png" alt="Nwitter">
+              <p></p>
+              <a href="https://github.com/catherinek07/nwitter">Take me there!</a>
+          </div>
+      </article>
+      <article id="awards">
+          <h1>Awards</h1>
+          <h2>Here are some of the awards I've won!</h2>
+          <h3>ICTC Cybertitans 2020/2021 </h3>
+          <p>Placed 9th in 2020 and 5th in 2021 nationally for a cybersecurity competition</p>
+          <h3>Canhack (PicoCTF) </h3>
+          <p>Placed 94th worldwide and 14th nationally for a cybersecurity competition and 1st in the national All-Girls category in 2021 and 2022</p>
+          <h3>HeroHacks II</h3>
+          <p>Won the category of Best Use of Deso by using NFTs.</p>
+          <h3>Old Scona Academic Grade 10</h3>
+          <p>Received a Certificate of Merit for First Class Academic Honours in Grade 10 and received the Highest Achievement Award for Computing Science 10 Pre-IB and Musical Theatre 15</p>
+          <h3>Old Scona Academic Grade 11</h3>
+          <p>Received a Certificate of Merit for First Class Academic Honours in Grade 11 and received the Highest Achievement Award for Computing Science 30 IB and Cybersecurity 10 and 20. </p>
+          <h3>Old Scona Academic Grade 12</h3>
+          <p>Received a Certificate of Merit for First Class Academic Honours in Grade 12 and received the Highest Achievement Award for Cybersecurity, the Ruhanjot award, and the Edmonton Public School Division Career and Life Pathways Award. </p>
+          <h3>Royal Conservatory of Music</h3>
+          <p>Achieved RCM 8 in theory, clarinet, and piano </p>
+          <h3>Korean Canadian Scholarship Foundation Edmonton</h3>
+          <p>Received the KCSFE Academic scholarship in 2020 and 2021 ($750 ea.)</p>
+          <h3>Philanthropic Education Organization Scholarship</h3>
+          <p>Received the P.E.O. STAR Scholarship ($2,500). </p>
+          <h3>University of Waterloo</h3>
+          <p>Received the Waterloo Entrance Scholarship ($2,000) and the Colonel Hugh Heasley Engineering Scholarship ($10,000). </p>
+      </article>
+      <article id="experience">
+          <h1>
+              Volunteer & Work Experiences
+          </h1>
+          <h2>
+              Lifestyle Options, Edmonton AB—Musician
+          </h2>
+          <p>September 2018- Pre-Covid
+              -Played clarinet at this senior home
+          </p>
+          <h2>
+              Edmonton Public Library, Edmonton AB—Reading Buddies
+          </h2>
+          <p>September 2018- Pre-Covid
+              -Worked with kids one-on-one to help improve their reading skills
+          </p>
+          <h2>
+              Covenant CRC, Edmonton AB—Sunday School Helper/Nursery Volunteer & Musician
+          </h2>
+          <p>September 2016- Current
+              -Helped with arts and crafts and acted as a pen-pal for young kids
+              -Played the keyboard and the clarinet during Sunday services
+          </p>
+          <h2>
+              Korean 101, Department of East Asian Studies, University of Alberta— Teaching Assistant
+          </h2>
+          <p>January 2021- April 2021
+              -Led group discussions and improved  Korean reading, writing, speaking, and listening skills of students at the University of Alberta.
+          </p>
+          <h2>Edmonton Korean Language School— Teaching Assistant
+          </h2>
+          <p>September 2021- Current
+              -Worked with elementary students to enhance Korean reading, writing, speaking, and listening skills
+          </p>
+          <p>
+          <h2>Student’s Union, Old Scona Academic in Edmonton AB— Room Representative,  Vice President of Operations, Vice President Public Relations
+          </h2>
+          <p>September 2019- Current
+              -Elected in September, organized and executed all in-school events including the school-wide fundraiser Ignite-a-thon, raising over $18,000 for the Stollery Children’s Hospital
+              - Managed both internal and external communications and the technology of the Students’ Union
+          <p>
+          <h2>Student Engagement Team, Old Scona Academic in Edmonton AB— Mentor (General, French, English)
+          </h2>
+          <p>
+              June 2020- Current
+              -Mentored a Grade 10 student for them to adapt more easily to high school, mentored a student in English 10, and created resources for incoming Grade 10s in French.
+      </article>
+      <article id="education">
+          <h1>
+              Education
+          </h1>
+          <h2>University of Waterloo</h2>
+          <h3>Waterloo, ON — Bachelor of Software Engineering</h3>
+          <p>
+              2022-2027 (Expected Graduation)
+          </p>
+          <h2>Old Scona Academic</h2>
+          <h3>Edmonton, AB — High School</h3>
+          <p>
+              2019-2022 (Graduated with First-Class Honours)
+          </p>
+      </article>
+      <article id="skills">
+          <h1>
+              Skills
+          </h1>
+          <h2>Python, HTML/CSS/JavaScript, Java, React.js </h2>
+          <h2>English, Korean, French</h2>
+      </article>
+  </div>
+</body>
 </html>

@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+body{
+    background-color:beige;
+    font-family: 'Catamaran', sans-serif;
+}
+img{
+  margin: 1vw 0 0 0;
+  width:10vw;
+  height:auto;
+}
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:11vw;
+  background-color:#f5746b;
+  text-align: center;
+  align-items: center;
+  line-height: 3.0;
+  z-index:100;
+  overflow:scroll;
+    
+}
+nav>ul{
+  list-style-type: none;
+  font-size: 20px;
+}
+a:link, a:visited {
+  background-color: #f5746b;
+  color: rgb(212, 206, 206);
+  padding: 1vh 1.4vw;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a:hover, a:active {
+  color:white;
+  background-color: #f66257;
 }
+#about{
+  top:10vh;
+  font-size: 18px;
+  position:relative;
+  margin: 10vh 0 0 14vw;
+  width:75%;
+}
+#projects{
+  top:0;
+  font-size: 18px;
+  position:relative;
+  margin: 30vh 0 0 14vw;
+  width:75%;
+}
+#projects>h2{
+  color:grey;
+}
+.images{
+  float: left;
+  width: 30%;
+  padding: 1vw;
+}
+#awards{
+  font-size: 18px;
+  position: relative;
+  margin: 50vh 0 0 14vw; 
+  width:75%;
+}
+#awards>h2{
+  color:grey;
+}
+#awards>h3{
+  color:#b9463e;
+}
+#experience{
+  top:0;
+  font-size: 18px;
+  position: relative;
+  margin: 20vh 0 0 14vw;
+  width:75%;
+}
+#experience>h2{
+  font-size: 22px;
+  color:#89332d;
+}
+#education{
+  top:0;
+  font-size: 18px;
+  position:relative;
+  margin: 20vh 0 0 14vw; 
+  width:75%;
+}
+#education>h2{
+  font-size: 22px;
+  color:#6b2520;
+}
+#education>p{
+  color:grey;
+}
+#skills{
+  top:0;
+  font-size: 18px;
+  position:relative;
+  margin: 20vh 0 0 14vw;
+  width:75%;
+}
+#skills>h2{
+  color:grey;
+}
+.scroll{
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  width: 30px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  z-index: 100;
+ }
+ 
+ .scroll:hover{
+  opacity: 0.7;
+ }

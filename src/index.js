@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import $ from 'jquery';
+import AnimatedBg from "react-animated-bg";
+function App(){
+  const Wrapper = () => (
+    <AnimatedBg colors={["red", "#ef4f03", "rgb(47, 53, 255)"]}>
+      My element with animated BG
+    </AnimatedBg>
+  );
+  return(Wrapper);
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +19,17 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+$(document).ready(function(){
+    $(window).scroll(function(){
+     if ( $(this).scrollTop() > 100) { 
+      $('.scroll').fadeIn();
+     } else { 
+      $('.scroll').fadeOut();
+     }
+    });
+    
+    $('.scroll').click(function(){
+     $('html, body').animate({scrollTop : 0},800);
+     return false;
+    });
+});

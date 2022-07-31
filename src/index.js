@@ -2,14 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import $ from 'jquery';
-import AnimatedBg from "react-animated-bg";
+
 function App(){
-  const Wrapper = () => (
-    <AnimatedBg colors={["red", "#ef4f03", "rgb(47, 53, 255)"]}>
-      My element with animated BG
-    </AnimatedBg>
-  );
-  return(Wrapper);
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

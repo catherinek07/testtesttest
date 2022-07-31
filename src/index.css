@@ -108,6 +108,13 @@ a:hover, a:active {
 #skills>h2{
   color:grey;
 }
+#root{
+  top:0;
+  font-size: 18px;
+  position:relative;
+  margin: 20vh 0 0 14vw;
+  width:75%;
+}
 .scroll{
   position: fixed;
   bottom: 10px;
